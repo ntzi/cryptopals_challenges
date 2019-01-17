@@ -5,10 +5,10 @@
 #  ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 
 # Given a hex encoded string (eg: 1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736), which
-# has been XOR'd against a single character, Finds the key and decrypts the message.
-# In order to fine the correct key a scoring function has been developed.
+# has been XOR'd against a single character, finds the key and decrypts the message.
+# In order to find the correct key a scoring function has been developed.
 # This scoring function finds the correct key by evaluating the output message based on the relative frequency
-# the characters occur in the English language
+# the characters occur in the English language.
 
 #  ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 #  ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
