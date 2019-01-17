@@ -8,8 +8,8 @@ Not all challenges are solved... yet! :)
 ## Solved Challenges
 
 ### Set 1: Basics
-* [Fixed XOR](https://cryptopals.com/sets/1/challenges/2)
-* [Single-byte XOR cipher](https://cryptopals.com/sets/1/challenges/3)
+2. [Fixed XOR](https://cryptopals.com/sets/1/challenges/2)
+3. [Single-byte XOR cipher](https://cryptopals.com/sets/1/challenges/3)
 
 
 ## Prerequisites
