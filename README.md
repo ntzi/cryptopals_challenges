@@ -1,6 +1,6 @@
 # Cryptopals Crypto Challenges
 
-Simple solutions on The Cryptopals Crypto Challenges. (https://cryptopals.com)
+Simple solutions on [The Cryptopals Crypto Challenges](https://cryptopals.com).
 
 Not all challenges are solved... yet! :)
 
