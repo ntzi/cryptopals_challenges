@@ -70,7 +70,8 @@ class xorCipher():
         return key
 
 
-
+    # Score the deciphered string.
+    # The biggest the score the most possible to have it successfully deciphered.
     def score(self, string_input):
         # Relative frequency in the English language. Source: https://en.wikipedia.org/wiki/Letter_frequency
         relative_letter_frequency = {
@@ -120,8 +121,6 @@ class xorCipher():
         return score
 
 
-
-
     # Decipher a string with a key.
     # The key must be a single character.
     def decipher_with_key(self, key):
@@ -142,6 +141,9 @@ class xorCipher():
         return deciphered_string
 
 
+    # Finds the correct key to decipher the input string.
+    # The key is one of the characters of the english alphabet.
+    # It tests all the lowercase characters using the scoring function self.score()
     def find_key(self):
         max_score = 0
         for character in string.ascii_lowercase:
@@ -160,12 +162,14 @@ class xorCipher():
 
 
 
+
+
 if __name__ == '__main__':
     ciphered_string = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736"
 
     xor_cipher = xorCipher(ciphered_string=ciphered_string)
     deciphered_string = xor_cipher.decipher()
-    # You can also decipher the string if we already now the key by directly providing it.
+    # We can also decipher the string if we already know the key by directly providing it. Eg:
     # deciphered_string = xor_cipher.decipher_with_key(key="x")
 
     print("Deciphered Message: ", deciphered_string)
