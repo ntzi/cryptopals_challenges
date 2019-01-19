@@ -26,7 +26,8 @@ import math
 import re
 from collections import Counter
 
-class xorCipher():
+
+class XorCipher():
     def __init__(self, ciphered_string):
         self.ciphered_string = ciphered_string
         return
@@ -167,7 +168,7 @@ class xorCipher():
 if __name__ == '__main__':
     ciphered_string = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736"
 
-    xor_cipher = xorCipher(ciphered_string=ciphered_string)
+    xor_cipher = XorCipher(ciphered_string=ciphered_string)
     deciphered_string = xor_cipher.decipher()
     # We can also decipher the string if we already know the key by directly providing it. Eg:
     # deciphered_string = xor_cipher.decipher_with_key(key="x")
